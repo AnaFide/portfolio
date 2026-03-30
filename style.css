@@ -3,32 +3,30 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* MAIN LAYOUT */
+/* LAYOUT */
 .container {
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 /* LEFT SIDE */
 .left {
   width: 40%;
   background: #f2f2f2;
-  text-align: center;
-  padding: 60px 20px;
+  padding: 80px 40px;
   position: sticky;
   top: 0;
   height: 100vh;
 }
 
 .profile {
-  width: 200px;
+  width: 150px;
   border-radius: 10px;
   margin-bottom: 20px;
 }
 
 .role {
   color: gray;
-  margin-bottom: 20px;
 }
 
 /* BUTTON */
@@ -38,27 +36,15 @@ body {
   color: white;
   padding: 10px 20px;
   text-decoration: none;
-  margin: 10px 5px;
+  margin-top: 20px;
   border-radius: 5px;
-  transition: 0.2s;
 }
 
 .btn:hover {
   background: black;
 }
 
-/* SOCIALS */
-.socials {
-  margin-top: 20px;
-}
-
-.socials a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: black;
-}
-
-/* RIGHT SIDE (SCROLL ENABLED) */
+/* RIGHT SIDE */
 .right {
   width: 60%;
   background: #dcdcdc;
@@ -71,17 +57,22 @@ body {
   font-size: 36px;
 }
 
-/* PROJECTS */
-.project {
-  background: white;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 10px;
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
 }
 
-/* BUTTON GROUP */
-.buttons {
-  margin: 20px 0;
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
 }
 
 /* SMOOTH SCROLL */
