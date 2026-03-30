@@ -6,7 +6,7 @@ body {
 /* MAIN LAYOUT */
 .container {
   display: flex;
-  min-height: 100vh; /* ✅ allows scrolling */
+  min-height: 100vh;
 }
 
 /* LEFT SIDE */
@@ -15,6 +15,9 @@ body {
   background: #f2f2f2;
   text-align: center;
   padding: 60px 20px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
 }
 
 .profile {
@@ -55,11 +58,13 @@ body {
   color: black;
 }
 
-/* RIGHT SIDE */
+/* RIGHT SIDE (SCROLL ENABLED) */
 .right {
   width: 60%;
   background: #dcdcdc;
   padding: 80px;
+  height: 100vh;
+  overflow-y: auto;
 }
 
 .right h2 {
