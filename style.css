@@ -1,9 +1,64 @@
 body {
-  font-family: Arial;
-  text-align: center;
-  background: #f4f4f4;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
-h1 {
-  color: #333;
+/* MAIN LAYOUT */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* LEFT SIDE */
+.left {
+  width: 40%;
+  background: #f4f4f4;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.profile {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.role {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 20px 0;
+}
+
+/* SOCIALS */
+.socials a {
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+/* RIGHT SIDE */
+.right {
+  width: 60%;
+  background: #e0e0e0;
+  padding: 80px;
+}
+
+.right h2 {
+  font-size: 40px;
+}
+
+.buttons button {
+  margin-right: 20px;
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+  border: none;
 }
