@@ -6,7 +6,7 @@ body {
 /* MAIN LAYOUT */
 .container {
   display: flex;
-  height: 100vh;
+  min-height: 100vh; /* ✅ allows scrolling */
 }
 
 /* LEFT SIDE */
@@ -60,7 +60,6 @@ body {
   width: 60%;
   background: #dcdcdc;
   padding: 80px;
-  overflow-y: auto;
 }
 
 .right h2 {
